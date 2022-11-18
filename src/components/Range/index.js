@@ -9,19 +9,17 @@ const Range = () => {
     <div className="range-outer-container">
       <p className="number-display">{number + 1}</p>
       <div className="range-inner-container">
-        <div class="wifi-symbol">
-          {dataArray.map((item, index) => {
-            return (
-              <div
-                class={`wifi-circle ${item}`}
-                style={{
-                  borderColor: number >= 4 - index && "#ffffff",
-                }}
-                onClick={() => setNumber(4 - index)}
-              />
-            );
-          })}
-        </div>
+        {dataArray.map((item, index) => {
+          return (
+            <div
+              className={`wifi-circle-custom ${item}`}
+              style={{
+                borderColor: number >= 4 - index && "#ffffff",
+              }}
+              onClick={() => setNumber(4 - index)}
+            />
+          );
+        })}
       </div>
     </div>
   );
