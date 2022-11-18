@@ -45,10 +45,17 @@
     left: 0;
     border-color: #7FA5A5;
     border-style: solid;
-    border-width: 1em 1em 0 0;
+    border-width: 1.3em 1.3em 0 0;
     -webkit-border-radius: 0 100% 0 0;
     border-radius: 0 100% 0 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 }
 
 .wifi-symbol .wifi-circle.top {
@@ -80,8 +87,8 @@
 
 .number-display{
     position: absolute;
-    top: 20%;
-    font-size:24px;
+    top: 10vh;
+    font-size:44px;
     color:white;
     font-weight:bold;
 }
